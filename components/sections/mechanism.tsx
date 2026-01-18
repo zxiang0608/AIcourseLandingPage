@@ -18,7 +18,6 @@ export function Mechanism() {
         {
             icon: Bot,
             title: "本土化指令",
-            subtitle: "The Localizer",
             desc: "让 AI 懂 \"Manglish\"，懂 \"Pasar Malam\" 的语气，写出有人味的文案。"
         }
     ];

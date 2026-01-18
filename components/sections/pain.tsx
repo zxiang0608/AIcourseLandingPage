@@ -5,28 +5,21 @@ import { cn } from "@/lib/utils";
 
 export function Pain() {
     return (
-        <section className="relative py-20 px-4">
+        <section className="relative py-20 px-4 mb-[40px] md:mb-0">
             <div className="max-w-4xl mx-auto space-y-12">
                 {/* Header with Flicker Effect */}
                 <div className="text-center space-y-4">
+                    <p className="text-xs text-gray-500 font-mono">
+                        预览班名额有限 (Limited Seats)
+                    </p>
                     <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                        你的利润 (Profit) 都在被 <br className="md:hidden" />
-                        <motion.span
-                            animate={{ opacity: [1, 0.4, 1, 0.8, 1] }}
-                            transition={{
-                                duration: 2,
-                                repeat: Infinity,
-                                repeatType: "reverse",
-                                times: [0, 0.1, 0.2, 0.4, 1]
-                            }}
-                            className="text-[#FF0000] text-glow-red"
-                        >
+                        <motion.span>
                             "隐形成本"
                         </motion.span> 吃掉？
                     </h2>
                     <p className="text-xl md:text-2xl text-gray-400">
                         不只是钱。做生意最贵的是 <br className="md:hidden" />
-                        <span className="text-red-500 font-semibold">时间 (Time)</span> 和 <span className="text-red-500 font-semibold">脑力 (Brainpower)</span>。
+                        <span className="text-red-500 font-semibold">时间</span> 和 <span className="text-red-500 font-semibold">脑力</span>。
                     </p>
                 </div>
 
@@ -36,10 +29,10 @@ export function Pain() {
 
                     <div className="space-y-6 text-lg text-gray-300 leading-relaxed font-light">
                         <p>
-                            你想做一个 Campaign，单单 <strong className="text-white">策划 (Planning)</strong> 就卡了 3 天，对着电脑发呆。
+                            你想做一个 Campaign，单单 <strong className="text-white">策划</strong> 就卡了 3 天，对着电脑发呆。
                         </p>
                         <p>
-                            方案想出来了，又要找人设计、写文案，结果又要花时间 <strong className="text-white">沟通 (Communicate)</strong> 和 <strong className="text-white">等待 (Waiting)</strong>。样样都要钱，最惨的是样样都要 "等"。
+                            方案想出来了，又要找人设计、写文案，结果又要花时间 <strong className="text-white">沟通</strong> 和 <strong className="text-white">等待</strong>。样样都要钱，最惨的是样样都要 "等"。
                         </p>
                         <p className="text-xl font-medium text-white border-l-2 border-red-500 pl-4 py-1">
                             生意讲究的是速度。你在 "等人" 的时候，你的竞争对手已经把钱赚走了。

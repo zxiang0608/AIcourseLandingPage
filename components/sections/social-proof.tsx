@@ -13,7 +13,7 @@ export function SocialProof() {
                     </blockquote>
 
                     <div className="mt-8 text-center">
-                        <div className="font-bold text-white">— Tech Lead & System Architect</div>
+                        <div className="font-bold text-white">— 技术总监 & 系统架构师</div>
                     </div>
                 </GlassCard>
             </div>

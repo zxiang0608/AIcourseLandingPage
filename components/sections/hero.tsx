@@ -27,10 +27,11 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-balance"
                 >
-                    如何建立一个 <br className="hidden md:block" />
-                    <span className="text-[#C69D3C] text-glow">24小时为你工作的 <br className="md:hidden" /> AI 销售团队</span>
+                    如何建立一个 <br />
+                    <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">24小时为你工作的</span> <br />
+                    <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">AI 销售团队</span>
                     <span className="block text-2xl md:text-3xl mt-2 font-mono font-normal text-white/60">(RM0/Hour)</span>
                 </motion.h1>
 
@@ -41,10 +42,9 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed"
                 >
-                    别再只是跟 AI "聊天" (Chatting)。
-                    <br className="md:hidden" /> 开始学会 <span className="text-white font-semibold">"指挥" (Commanding)</span>。
+                    别再只是跟 AI "聊天" (Chatting)。学会建立资产 (Build Assets)。
                     <br />
-                    建立真正属于你的商业资产。
+                    把 AI 变成真正为你 <span className="text-white font-semibold">赚钱的商业机器</span>。
                 </motion.p>
 
                 {/* CTA */}
@@ -57,13 +57,13 @@ export function Hero() {
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-[#C69D3C] to-[#F3E2B6] rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                         <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50">
-                            YES, 安装 AI 指挥官系统
-                            <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM49</span>
+                            YES, 我要 AI 指挥官系统
+                            <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM55</span>
                             <ChevronRight className="ml-2 w-5 h-5" />
                         </Button>
                     </div>
                     <p className="text-xs text-gray-500 font-mono">
-                        Limited Seats for Preview Batch
+                        预览班名额有限 (Limited Seats)
                     </p>
                 </motion.div>
             </div>
