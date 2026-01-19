@@ -3,6 +3,7 @@ import { TrustStrip } from "@/components/sections/trust-strip";
 import { Pain } from "@/components/sections/pain";
 import { Authority } from "@/components/sections/authority";
 import { Mechanism } from "@/components/sections/mechanism";
+// ExecutionModule moved to embedded components
 import { SocialProof } from "@/components/sections/social-proof";
 import { Filter } from "@/components/sections/filter";
 import { Offer } from "@/components/sections/offer";
@@ -17,11 +18,11 @@ export default function Home() {
       <Pain />
       <Authority />
       <Mechanism />
+      {/* ExecutionModule moved to embedded components */}
       <SocialProof />
       <Filter />
       <Offer />
       <FAQ />
-      <MobileStickyFooter />
       {/* Additional sections will be added here */}
     </main>
   );

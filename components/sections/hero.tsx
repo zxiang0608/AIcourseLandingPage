@@ -27,12 +27,15 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-balance"
+                    className="text-3xl md:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.2] text-balance"
                 >
-                    如何建立一个 <br />
-                    <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">24小时为你工作的</span> <br />
-                    <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">AI 销售团队</span>
-                    <span className="block text-2xl md:text-3xl mt-2 font-mono font-normal text-white/60">(RM0/Hour)</span>
+                    <span className="block text-2xl md:text-5xl lg:text-6xl text-gray-200 mb-2 md:mb-4">
+                        请 3 个员工不如部署一套 AI？
+                    </span>
+                    <span className="block">
+                        教你建立一个 <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">“只用电、不拿薪水”</span> 的 <br className="hidden md:block" />
+                        <span className="text-[#C69D3C] text-glow inline-block whitespace-nowrap">24 小时销售部队</span>。
+                    </span>
                 </motion.h1>
 
                 {/* Sub-headline */}
@@ -40,11 +43,11 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed"
+                    className="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 leading-relaxed"
                 >
-                    别再只是跟 AI "聊天" (Chatting)。学会建立资产 (Build Assets)。
-                    <br />
-                    把 AI 变成真正为你 <span className="text-white font-semibold">赚钱的商业机器</span>。
+                    别再只是跟 AI “聊天” (Chatting)。
+                    <span className="text-white">学会复制你的老板脑袋</span>，<br className="md:hidden" />
+                    让 AI 变成你真正的赚钱资产。
                 </motion.p>
 
                 {/* CTA */}
@@ -56,11 +59,13 @@ export function Hero() {
                 >
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-[#C69D3C] to-[#F3E2B6] rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50">
-                            YES, 我要 AI 指挥官系统
-                            <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM55</span>
-                            <ChevronRight className="ml-2 w-5 h-5" />
-                        </Button>
+                        <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer">
+                            <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50">
+                                YES, 我要 AI 指挥官系统
+                                <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM65</span>
+                                <ChevronRight className="ml-2 w-5 h-5" />
+                            </Button>
+                        </a>
                     </div>
                     <p className="text-xs text-gray-500 font-mono">
                         预览班名额有限 (Limited Seats)

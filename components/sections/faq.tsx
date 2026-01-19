@@ -8,7 +8,7 @@ export function FAQ() {
 
                 <h3 className="text-3xl font-bold text-[#C69D3C] tracking-wide">零风险承诺 <br /> (No-Brainer Guarantee)</h3>
                 <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto text-lg">
-                    如果你在两小时的特训营中，觉得学不到东西，或者觉得太难操作：<strong className="text-white block mt-2 text-xl">我将全额退款 RM55。</strong>
+                    如果你在两小时的特训营中，觉得学不到东西，或者觉得太难操作：<strong className="text-white block mt-2 text-xl">我将全额退款 RM65。</strong>
                     <br />
                     <span className="block mt-4 text-sm text-white/60">你可以保留所有的 Prompt 和源代码。没有任何风险。你唯一的风险就是 <span className="underline decoration-[#C69D3C] underline-offset-4 text-white">错过</span>。</span>
                 </p>
@@ -69,13 +69,13 @@ export function FAQ() {
 
                     <details className="group bg-white/5 border border-white/5 rounded-xl open:bg-white/[0.07] transition-all">
                         <summary className="flex cursor-pointer items-center justify-between p-6 font-medium text-lg list-none">
-                            <span>Q: 为什么才收 RM55？</span>
+                            <span>Q: 为什么才收 RM65？</span>
                             <span className="transition group-open:rotate-180">
                                 <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                             </span>
                         </summary>
                         <div className="px-6 pb-6 text-gray-400 leading-relaxed">
-                            A: 这是一个 Preview。没有陷阱。我想展示我的系统。如果你喜欢，后续可以参加高级班。不喜欢的话，这 RM55 就当是我请你喝杯咖啡。
+                            A: 这是一个 Preview。没有陷阱。我想展示我的系统。如果你喜欢，后续可以参加高级班。不喜欢的话，这 RM65 就当是我请你喝杯咖啡。
                         </div>
                     </details>
                 </div>
