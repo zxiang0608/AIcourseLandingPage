@@ -8,7 +8,7 @@ export function Hero() {
     return (
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden px-4 py-20">
             {/* Background Radial Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#C69D3C]/10 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#C69D3C]/10 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
             <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
                 {/* Hook / Badge - Optional but adds technical feel */}
@@ -60,10 +60,23 @@ export function Hero() {
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-[#C69D3C] to-[#F3E2B6] rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                         <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer">
-                            <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50">
-                                YES, 我要 AI 指挥官系统
-                                <span className="ml-2 bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM65</span>
-                                <ChevronRight className="ml-2 w-5 h-5" />
+                            <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50 h-auto py-3 px-8 md:h-16 md:py-4">
+                                {/* Mobile Layout: Stacked */}
+                                <div className="flex md:hidden flex-col items-center leading-none gap-1">
+                                    <span className="text-xs font-medium tracking-widest text-[#C69D3C]/90 uppercase">Yes,</span>
+                                    <div className="flex items-center gap-2">
+                                        <span>我要 AI 指挥官系统</span>
+                                        <span className="bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM65</span>
+                                        <ChevronRight className="w-4 h-4" />
+                                    </div>
+                                </div>
+
+                                {/* Desktop Layout: Inline */}
+                                <div className="hidden md:flex items-center gap-2">
+                                    <span>YES, 我要 AI 指挥官系统</span>
+                                    <span className="bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM65</span>
+                                    <ChevronRight className="w-5 h-5" />
+                                </div>
                             </Button>
                         </a>
                     </div>

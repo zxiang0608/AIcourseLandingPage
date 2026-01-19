@@ -11,7 +11,7 @@ export function TrustStrip() {
     ];
 
     return (
-        <section className="border-y border-white/5 bg-white/[0.02] backdrop-blur-sm overflow-hidden py-8">
+        <section className="border-y border-white/5 bg-white/[0.02] backdrop-blur-sm overflow-hidden py-8 w-full max-w-[100vw]">
             <div className="flex gap-[60px] animate-marquee whitespace-nowrap min-w-full items-end">
                 {/* Logo Set - Repeated for Infinite Effect */}
                 {[0, 1, 2, 3].map((setIndex) => (

@@ -6,9 +6,9 @@ import { CheckSquare, ShieldCheck } from "lucide-react";
 
 export function Offer() {
     return (
-        <section className="py-20 px-4 relative md:mb-0">
+        <section className="py-20 px-4 relative md:mb-0 overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#C69D3C]/5 blur-[150px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[800px] md:h-[800px] bg-[#C69D3C]/5 blur-[80px] md:blur-[150px] rounded-full pointer-events-none" />
 
             {/* Shimmer Animation Style */}
             <style jsx>{`
@@ -112,13 +112,13 @@ export function Offer() {
 
                         {/* CTA Button & Risk Text */}
                         <div className="pt-4 space-y-4">
-                            {/* Floating Capsule Button - Mobile Optimized */}
-                            <div className="block fixed bottom-4 left-4 right-4 z-50 md:static md:w-full md:max-w-3xl md:mx-auto safe-area-bottom w-auto">
+                            {/* Floating Capsule Button - Mobile Optimized (Start Center) */}
+                            <div className="block fixed bottom-6 left-1/2 -translate-x-1/2 z-50 safe-area-bottom w-auto max-w-[95vw]">
                                 <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
 
-                                    <Button size="xl" className="w-full text-sm md:text-lg bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-full uppercase tracking-normal md:tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98] px-2 md:px-10">
+                                    <Button size="xl" className="w-auto px-6 md:px-10 text-sm md:text-lg bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-full uppercase tracking-normal md:tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98] whitespace-nowrap">
                                         [ 我要报名：开启 AI 自动模式 ]
                                     </Button>
                                 </a>
