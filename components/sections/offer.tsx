@@ -6,7 +6,7 @@ import { CheckSquare, ShieldCheck } from "lucide-react";
 
 export function Offer() {
     return (
-        <section className="py-20 px-4 relative mb-24 md:mb-0">
+        <section className="py-20 px-4 relative md:mb-0">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#C69D3C]/5 blur-[150px] rounded-full pointer-events-none" />
 
@@ -113,7 +113,7 @@ export function Offer() {
                         {/* CTA Button & Risk Text */}
                         <div className="pt-4 space-y-4">
                             {/* Floating Capsule Button - Mobile Optimized */}
-                            <div className="block md:static fixed bottom-4 left-4 right-4 z-50 safe-area-bottom">
+                            <div className="block md:static fixed bottom-4 left-0 right-0 px-4 z-50 safe-area-bottom w-full max-w-3xl mx-auto">
                                 <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
@@ -125,7 +125,7 @@ export function Offer() {
                             </div>
 
                             {/* Zero Risk Promise */}
-                            <div className="flex items-center justify-center gap-2 text-gray-500 text-xs md:text-sm pt-2 md:pt-0 pb-24 md:pb-0">
+                            <div className="flex items-center justify-center gap-2 text-gray-500 text-xs md:text-sm pt-2 md:pt-0 pb-4 md:pb-0">
                                 <ShieldCheck className="w-4 h-4" />
                                 <span>零风险承诺：学不会全额退款 (100% Money Back Guarantee)</span>
                             </div>
