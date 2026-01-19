@@ -118,7 +118,7 @@ export function Offer() {
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
 
-                                    <Button size="xl" className="w-full text-lg bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-full uppercase tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98]">
+                                    <Button size="xl" className="w-full text-sm md:text-lg bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-full uppercase tracking-normal md:tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98] px-2 md:px-10">
                                         [ 我要报名：开启 AI 自动模式 ]
                                     </Button>
                                 </a>
