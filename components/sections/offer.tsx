@@ -113,7 +113,7 @@ export function Offer() {
                         {/* CTA Button & Risk Text */}
                         <div className="pt-4 space-y-4">
                             {/* Floating Capsule Button - Mobile Optimized */}
-                            <div className="block md:static fixed bottom-4 left-0 right-0 px-4 z-50 safe-area-bottom w-full max-w-3xl mx-auto">
+                            <div className="block fixed bottom-4 left-4 right-4 z-50 md:static md:w-full md:max-w-3xl md:mx-auto safe-area-bottom w-auto">
                                 <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
