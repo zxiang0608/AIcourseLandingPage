@@ -4,7 +4,7 @@ import { ExecutionModule } from "@/components/sections/execution-module";
 
 export function Authority() {
     return (
-        <section className="py-20 px-4 border-t border-white/5">
+        <section className="py-20 px-4 border-t border-white/5 pb-40 md:pb-20">
             <div className="max-w-6xl mx-auto space-y-12">
                 <div className="text-center space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold leading-tight text-balance">
@@ -16,24 +16,24 @@ export function Authority() {
                 </div>
 
                 {/* Bento Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-6 h-auto">
                     {/* Widget 1: Printing Business / Web System (MacBook Pro) */}
-                    <GlassCard className="md:col-span-2 relative overflow-hidden group min-h-[300px] flex flex-col">
+                    <GlassCard className="md:col-span-2 relative overflow-hidden group min-h-[350px] flex flex-col items-center text-center">
                         {/* Background/Lighting Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-br from-black/0 via-black/0 to-black/80 z-20 pointer-events-none" />
 
-                        <div className="relative z-30 p-6 h-full flex flex-col justify-end">
-                            <div className="flex items-center gap-2 text-[#C69D3C] mb-2">
-                                <Building2 className="w-5 h-5" />
+                        <div className="relative z-30 p-6 h-full flex flex-col justify-end items-center w-full">
+                            <div className="flex flex-col items-center gap-2 text-[#C69D3C] mb-4">
+                                <Building2 className="w-6 h-6" />
                                 <span className="font-mono text-sm uppercase tracking-wider">SYSTEM: PRINTING BUSINESS WEBSITE</span>
                             </div>
-                            <p className="text-xl font-bold text-white relative z-40">实体生意验证</p>
+                            <p className="text-2xl font-bold text-white relative z-40">实体生意验证</p>
                         </div>
 
 
                         {/* Isometric MacBook Mockup */}
-                        <div className="absolute top-0 right-0 w-[80%] md:w-[70%] h-full transform translate-x-12 translate-y-8 z-10 group-hover:translate-x-8 transition-transform duration-700">
-                            <div className="w-full relative transform perspective-[1000px] rotate-y-[-10deg] rotate-x-[5deg]">
+                        <div className="absolute top-0 right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 w-[80%] md:w-[70%] h-full transform translate-y-8 z-10 group-hover:scale-105 transition-transform duration-700">
+                            <div className="w-full relative transform perspective-[1000px] md:rotate-y-[-10deg] md:rotate-x-[5deg]">
                                 {/* 1. The Frame (Top Layer) */}
                                 <img
                                     src="/assets/uploads/macbook_frame_final.png"
@@ -53,19 +53,19 @@ export function Authority() {
                     </GlassCard>
 
                     {/* Widget 2: The App (iPhone) */}
-                    <GlassCard className="relative overflow-hidden group min-h-[300px] flex flex-col">
+                    <GlassCard className="relative overflow-hidden group min-h-[350px] flex flex-col items-center text-center">
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-20 pointer-events-none" />
 
-                        <div className="relative z-30 p-6 h-full flex flex-col justify-end">
-                            <div className="flex items-center gap-2 text-[#C69D3C] mb-2">
-                                <TrendingUp className="w-5 h-5" />
+                        <div className="relative z-30 p-6 h-full flex flex-col justify-end items-center w-full">
+                            <div className="flex flex-col items-center gap-2 text-[#C69D3C] mb-4">
+                                <TrendingUp className="w-6 h-6" />
                                 <span className="font-mono text-sm uppercase tracking-wider">SYSTEM: BUSINESS APP INTERFACE</span>
                             </div>
-                            <p className="text-xl font-bold text-white">服务业验证</p>
+                            <p className="text-2xl font-bold text-white">服务业验证</p>
                         </div>
 
                         {/* Floating iPhone Mockup */}
-                        <div className="absolute top-8 right-8 w-auto z-10 transform translate-x-4 md:translate-x-0">
+                        <div className="absolute top-8 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 w-auto z-10">
                             <div className="relative transform rotate-[-5deg] animate-float group-hover:translate-y-2 transition-transform duration-700 w-[150px] md:w-[200px]" style={{ animation: 'float 6s ease-in-out infinite' }}>
                                 <img
                                     src="/assets/uploads/iphone_composite_final.png"

@@ -112,27 +112,27 @@ export function Offer() {
 
                         {/* CTA Button & Risk Text */}
                         <div className="pt-4 space-y-4">
-                            {/* Button */}
-                            <div className="block md:static fixed bottom-0 left-0 right-0 p-4 md:p-0 bg-black/90 md:bg-transparent backdrop-blur-lg md:backdrop-blur-none z-50 border-t border-white/10 md:border-none safe-area-bottom">
-                                <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-sm">
+                            {/* Floating Capsule Button - Mobile Optimized */}
+                            <div className="block md:static fixed bottom-4 left-4 right-4 z-50 safe-area-bottom">
+                                <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
 
-                                    <Button size="xl" className="w-full text-lg shadow-[0_0_30px_-5px_#C69D3C] bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-sm uppercase tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98]">
+                                    <Button size="xl" className="w-full text-lg bg-[#C69D3C] hover:bg-[#b58d35] text-black font-bold border-none rounded-full uppercase tracking-widest h-14 md:h-16 relative z-10 transition-transform active:scale-[0.98]">
                                         [ 我要报名：开启 AI 自动模式 ]
                                     </Button>
                                 </a>
                             </div>
 
                             {/* Zero Risk Promise */}
-                            <div className="flex items-center justify-center gap-2 text-gray-500 text-xs md:text-sm pt-2 md:pt-0">
+                            <div className="flex items-center justify-center gap-2 text-gray-500 text-xs md:text-sm pt-2 md:pt-0 pb-24 md:pb-0">
                                 <ShieldCheck className="w-4 h-4" />
                                 <span>零风险承诺：学不会全额退款 (100% Money Back Guarantee)</span>
                             </div>
                         </div>
 
                         {/* Barcode - Brightened */}
-                        <div className="pt-8 flex flex-col items-center opacity-50 space-y-2">
+                        <div className="pt-8 flex flex-col items-center opacity-50 space-y-2 pb-32 md:pb-0">
                             <div className="h-10 w-full max-w-[180px] bg-white mix-blend-difference"
                                 style={{ maskImage: "repeating-linear-gradient(90deg, black, black 2px, transparent 2px, transparent 5px)" }}>
                             </div>
