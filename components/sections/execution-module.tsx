@@ -13,7 +13,8 @@ import {
     Briefcase,
     Globe,
     Printer,
-    Download
+    Download,
+    X
 } from 'lucide-react';
 
 /**
@@ -190,53 +191,61 @@ export function ExecutionModule({ embedded = false }: { embedded?: boolean }) {
                                         </div>
                                     </div>
                                     <div className="flex gap-2">
-                                        <button onClick={resetForm} className="text-[10px] font-mono uppercase bg-white/5 px-4 py-2 rounded border border-white/10 hover:bg-white/10">New Invoice</button>
-                                        <button onClick={() => window.print()} className="text-[10px] font-mono uppercase bg-yellow-500 text-black px-4 py-2 rounded font-black">Print Asset</button>
+                                        <button onClick={resetForm} className="text-[10px] font-mono uppercase bg-white/5 px-4 py-2 rounded border border-white/10 hover:bg-white/10 flex items-center gap-2">
+                                            <X size={14} />
+                                            <span>Close</span>
+                                        </button>
+                                        <button onClick={() => window.print()} className="text-[10px] font-mono uppercase bg-yellow-500 text-black px-4 py-2 rounded font-black flex items-center gap-2">
+                                            <Printer size={14} />
+                                            <span>Print / Save PDF</span>
+                                        </button>
                                     </div>
                                 </div>
 
                                 {/* Invoice Preview */}
-                                <div className="bg-white text-black p-8 md:p-14 rounded-sm shadow-2xl max-w-3xl mx-auto overflow-hidden print-invoice">
-                                    <div className="flex justify-between mb-16">
-                                        <div>
-                                            <div className="flex items-center gap-2 mb-4">
-                                                <Zap className="text-yellow-500" size={24} fill="black" />
-                                                <span className="font-black italic text-2xl uppercase">AI Commander Labs</span>
+                                <div className="w-full overflow-x-auto pb-8">
+                                    <div className="bg-white text-black p-8 md:p-14 rounded-sm shadow-2xl max-w-3xl mx-auto overflow-hidden print-invoice min-w-[700px]">
+                                        <div className="flex justify-between mb-16">
+                                            <div>
+                                                <div className="flex items-center gap-2 mb-4">
+                                                    <Zap className="text-yellow-500" size={24} fill="black" />
+                                                    <span className="font-black italic text-2xl uppercase">AI Commander Labs</span>
+                                                </div>
+                                                <p className="text-[11px] leading-tight text-gray-500 uppercase font-medium">Level 35, Mercu Cyberjaya, 63000, MY</p>
                                             </div>
-                                            <p className="text-[11px] leading-tight text-gray-500 uppercase font-medium">Level 35, Mercu Cyberjaya, 63000, MY</p>
+                                            <div className="text-right">
+                                                <h1 className="text-5xl font-black uppercase italic text-gray-100 mb-4">Invoice</h1>
+                                                <p className="text-[10px] uppercase font-bold text-gray-400">No. {formData.invoiceNo}</p>
+                                                <p className="text-sm font-bold">{formData.date}</p>
+                                            </div>
                                         </div>
-                                        <div className="text-right">
-                                            <h1 className="text-5xl font-black uppercase italic text-gray-100 mb-4">Invoice</h1>
-                                            <p className="text-[10px] uppercase font-bold text-gray-400">No. {formData.invoiceNo}</p>
-                                            <p className="text-sm font-bold">{formData.date}</p>
+
+                                        <div className="mb-16">
+                                            <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 tracking-widest">Bill To</p>
+                                            <p className="font-black uppercase text-2xl leading-none mb-1">{formData.clientName}</p>
+                                            <p className="text-xs text-gray-500 underline">{formData.clientEmail}</p>
                                         </div>
-                                    </div>
 
-                                    <div className="mb-16">
-                                        <p className="text-[10px] font-bold text-gray-400 uppercase mb-2 tracking-widest">Bill To</p>
-                                        <p className="font-black uppercase text-2xl leading-none mb-1">{formData.clientName}</p>
-                                        <p className="text-xs text-gray-500 underline">{formData.clientEmail}</p>
-                                    </div>
+                                        <table className="w-full mb-12 border-t-2 border-black">
+                                            <thead>
+                                                <tr className="text-[10px] uppercase font-black text-left border-b border-gray-100">
+                                                    <th className="py-5">Description</th>
+                                                    <th className="py-5 text-right">Total (RM)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="text-sm font-bold">
+                                                <tr>
+                                                    <td className="py-8 pr-4 border-b border-gray-50 uppercase">{formData.itemDescription}</td>
+                                                    <td className="py-8 text-right font-mono font-black border-b border-gray-50">{(typeof formData.amount === 'string' ? parseFloat(formData.amount) : formData.amount).toLocaleString('en-MY', { minimumFractionDigits: 2 })}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
 
-                                    <table className="w-full mb-12 border-t-2 border-black">
-                                        <thead>
-                                            <tr className="text-[10px] uppercase font-black text-left border-b border-gray-100">
-                                                <th className="py-5">Description</th>
-                                                <th className="py-5 text-right">Total (RM)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="text-sm font-bold">
-                                            <tr>
-                                                <td className="py-8 pr-4 border-b border-gray-50 uppercase">{formData.itemDescription}</td>
-                                                <td className="py-8 text-right font-mono font-black border-b border-gray-50">{(typeof formData.amount === 'string' ? parseFloat(formData.amount) : formData.amount).toLocaleString('en-MY', { minimumFractionDigits: 2 })}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <div className="flex justify-end pt-4 border-t-4 border-black">
-                                        <div className="text-right">
-                                            <span className="text-[10px] font-black uppercase tracking-widest mr-4">Total Due</span>
-                                            <span className="text-2xl font-black font-mono tracking-tighter text-yellow-500">RM {(typeof formData.amount === 'string' ? parseFloat(formData.amount) : formData.amount).toLocaleString('en-MY', { minimumFractionDigits: 2 })}</span>
+                                        <div className="flex justify-end pt-4 border-t-4 border-black">
+                                            <div className="text-right">
+                                                <span className="text-[10px] font-black uppercase tracking-widest mr-4">Total Due</span>
+                                                <span className="text-2xl font-black font-mono tracking-tighter text-yellow-500">RM {(typeof formData.amount === 'string' ? parseFloat(formData.amount) : formData.amount).toLocaleString('en-MY', { minimumFractionDigits: 2 })}</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
