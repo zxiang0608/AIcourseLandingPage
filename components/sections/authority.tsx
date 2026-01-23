@@ -1,6 +1,7 @@
 import { GlassCard } from "@/components/ui/glass-card";
 import { Building2, Code2, TrendingUp } from "lucide-react";
 import { ExecutionModule } from "@/components/sections/execution-module";
+import Image from "next/image";
 
 export function Authority() {
     return (
@@ -35,17 +36,20 @@ export function Authority() {
                         <div className="absolute top-0 right-1/2 translate-x-1/2 md:translate-x-0 md:right-0 w-[80%] md:w-[70%] h-full transform translate-y-8 z-10 group-hover:scale-105 transition-transform duration-700">
                             <div className="w-full relative transform perspective-[1000px] md:rotate-y-[-10deg] md:rotate-x-[5deg]">
                                 {/* 1. The Frame (Top Layer) */}
-                                <img
-                                    src="/assets/uploads/macbook_frame_final.png"
+                                <Image
+                                    src="/intro/assets/uploads/macbook_frame_final.png"
+                                    width={1200}
+                                    height={800}
                                     className="relative z-20 w-full h-auto pointer-events-none drop-shadow-2xl"
                                     alt="MacBook Frame"
                                 />
                                 {/* 2. The Screen Content (Bottom Layer) */}
                                 <div className="absolute top-[4.5%] left-[11.2%] w-[77.5%] h-[83%] bg-black z-10 overflow-hidden">
-                                    <img
-                                        src="/assets/uploads/printing_site_final.jpg"
+                                    <Image
+                                        src="/intro/assets/uploads/printing_site_final.jpg"
                                         alt="Printing Business System Dashboard"
-                                        className="w-full h-full object-cover"
+                                        fill
+                                        className="object-cover"
                                     />
                                 </div>
                             </div>
@@ -67,9 +71,11 @@ export function Authority() {
                         {/* Floating iPhone Mockup */}
                         <div className="absolute top-8 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-8 w-auto z-10">
                             <div className="relative transform rotate-[-5deg] animate-float group-hover:translate-y-2 transition-transform duration-700 w-[150px] md:w-[200px]" style={{ animation: 'float 6s ease-in-out infinite' }}>
-                                <img
-                                    src="/assets/uploads/iphone_composite_final.png"
+                                <Image
+                                    src="/intro/assets/uploads/iphone_composite_final.png"
                                     alt="Business App Interface"
+                                    width={400}
+                                    height={800}
                                     className="w-full h-full object-contain drop-shadow-2xl"
                                 />
                             </div>

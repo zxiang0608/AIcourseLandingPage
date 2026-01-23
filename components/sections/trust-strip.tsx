@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function TrustStrip() {
     const brands = [
@@ -31,9 +32,11 @@ export function TrustStrip() {
                             style={{ filter: 'brightness(0) invert(1)' }}
                         />
                         {/* Logo 3: Claude (Final Asset) */}
-                        <img
-                            src="/assets/uploads/claude_logo_final.png"
+                        <Image
+                            src="/intro/assets/uploads/claude_logo_final.png"
                             alt="Claude"
+                            width={100}
+                            height={40}
                             className="h-8 md:h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 pointer-events-none scale-90"
                             style={{ filter: 'brightness(0) invert(1)' }}
                         />
