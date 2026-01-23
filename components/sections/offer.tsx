@@ -82,7 +82,7 @@ export function Offer() {
                                 {/* Step 01 */}
                                 <div className="flex flex-col md:flex-row md:items-center justify-center gap-2 md:gap-4">
                                     <span className="text-[#C69D3C] font-bold whitespace-nowrap min-w-[80px] text-left md:text-right">01. 提交资料:</span>
-                                    <span className="text-gray-300 text-left">点击下方按钮进入 SenangPay 安全网关。</span>
+                                    <span className="text-gray-300 text-left">点击下方按钮填写报名表格。</span>
                                 </div>
 
                                 {/* Step 02 */}
@@ -114,7 +114,7 @@ export function Offer() {
                         <div className="pt-4 space-y-4">
                             {/* Floating Capsule Button - Mobile Optimized (Start Center) */}
                             <div className="block fixed bottom-6 left-1/2 -translate-x-1/2 z-50 safe-area-bottom w-auto max-w-[95vw]">
-                                <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
+                                <a href="https://tally.so/r/44K84r" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />
 

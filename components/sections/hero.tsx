@@ -59,7 +59,7 @@ export function Hero() {
                 >
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-[#C69D3C] to-[#F3E2B6] rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-                        <a href="https://app.senangpay.my/payment/176880122546" target="_blank" rel="noopener noreferrer">
+                        <a href="https://tally.so/r/44K84r" target="_blank" rel="noopener noreferrer">
                             <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50 h-auto py-3 px-8 md:h-16 md:py-4">
                                 {/* Mobile Layout: Stacked */}
                                 <div className="flex md:hidden flex-col items-center leading-none gap-1">
