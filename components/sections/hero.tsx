@@ -62,13 +62,10 @@ export function Hero() {
                         <a href="https://tally.so/r/44K84r" target="_blank" rel="noopener noreferrer">
                             <Button size="xl" className="relative shadow-2xl shadow-[#C69D3C]/20 border border-[#C69D3C]/50 h-auto py-3 px-8 md:h-16 md:py-4">
                                 {/* Mobile Layout: Stacked */}
-                                <div className="flex md:hidden flex-col items-center leading-none gap-1">
-                                    <span className="text-xs font-medium tracking-widest text-[#C69D3C]/90 uppercase">Yes,</span>
-                                    <div className="flex items-center gap-2">
-                                        <span>我要 AI 指挥官系统</span>
-                                        <span className="bg-black/20 px-2 py-0.5 rounded text-sm font-mono">RM65</span>
-                                        <ChevronRight className="w-4 h-4" />
-                                    </div>
+                                <div className="flex md:hidden items-center justify-center gap-2">
+                                    <span className="text-lg font-bold">我要 AI 指挥官系统</span>
+                                    <span className="bg-black/20 px-1.5 py-0.5 rounded text-xs font-mono font-bold">RM65</span>
+                                    <ChevronRight className="w-4 h-4 ml-0.5" />
                                 </div>
 
                                 {/* Desktop Layout: Inline */}

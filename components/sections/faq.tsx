@@ -8,7 +8,7 @@ export function FAQ() {
 
                 <h3 className="text-3xl font-bold text-[#C69D3C] tracking-wide">零风险承诺 <br /> (No-Brainer Guarantee)</h3>
                 <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto text-lg">
-                    如果你在两小时的特训营中，觉得学不到东西，或者觉得太难操作：<strong className="text-white block mt-2 text-xl">我将全额退款 RM65。</strong>
+                    如果你在3小时的特训营中，觉得学不到东西，<strong className="text-white block mt-2 text-xl">我将全额退款 RM65。</strong>
                     <br />
                     <span className="block mt-4 text-sm text-white/60">你可以保留所有的 Prompt 和源代码。没有任何风险。你唯一的风险就是 <span className="underline decoration-[#C69D3C] underline-offset-4 text-white">错过</span>。</span>
                 </p>

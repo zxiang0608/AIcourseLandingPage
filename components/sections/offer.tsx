@@ -104,6 +104,14 @@ export function Offer() {
                                         >
                                             🟢 联系助理 Fiona
                                         </a>
+                                        <a
+                                            href="https://wa.link/ub31zu"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-3 py-1 rounded border border-green-500/50 bg-green-500/10 text-green-400 text-xs font-bold hover:bg-green-500/20 hover:border-green-500 transition-all shadow-[0_0_10px_-2px_rgba(34,197,94,0.3)] animate-pulse"
+                                        >
+                                            🟢 联系助理 KC
+                                        </a>
                                         <span className="text-gray-300">确保您的名额已成功登记。</span>
                                     </div>
                                 </div>
@@ -113,7 +121,7 @@ export function Offer() {
                         {/* CTA Button & Risk Text */}
                         <div className="pt-4 space-y-4">
                             {/* Floating Capsule Button - Mobile Optimized (Start Center) */}
-                            <div className="block fixed bottom-6 left-1/2 -translate-x-1/2 z-50 safe-area-bottom w-auto max-w-[95vw]">
+                            <div className="block relative w-full flex justify-center pt-8">
                                 <a href="https://tally.so/r/44K84r" target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden rounded-full shadow-[0_4px_20px_rgba(198,157,60,0.4)]">
                                     {/* Shimmer Effect Layer */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 btn-shimmer pointer-events-none z-20" />

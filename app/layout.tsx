@@ -15,8 +15,20 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://co-lab.asia/intro"),
   title: "AI Commander System | Build Your 24/7 AI Sales Team",
   description: "Don't just chat with AI. Command it. Build a business asset that works for you 24/7. Join the workshop.",
+  openGraph: {
+    title: "AI Commander System | Build Your 24/7 AI Sales Team",
+    description: "Don't just chat with AI. Command it. Build a business asset that works for you 24/7. Join the workshop.",
+    url: "https://co-lab.asia/intro",
+    siteName: "AI Commander System",
+    type: "website",
+    locale: "en_US",
+  },
+  alternates: {
+    canonical: "./",
+  },
 };
 
 export default function RootLayout({

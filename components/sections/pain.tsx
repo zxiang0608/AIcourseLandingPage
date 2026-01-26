@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export function Pain() {
     return (
-        <section className="relative py-20 px-4 mb-[40px] md:mb-0">
+        <section id="pain-section" className="relative py-20 px-4 mb-[40px] md:mb-0">
             <div className="max-w-4xl mx-auto space-y-12">
                 {/* Header with Flicker Effect */}
                 <div className="text-center space-y-4">

@@ -23,6 +23,7 @@ export default function Home() {
       <Filter />
       <Offer />
       <FAQ />
+      <MobileStickyFooter />
       {/* Additional sections will be added here */}
     </main>
   );

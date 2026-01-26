@@ -195,10 +195,6 @@ export function ExecutionModule({ embedded = false }: { embedded?: boolean }) {
                                             <X size={14} />
                                             <span>Close</span>
                                         </button>
-                                        <button onClick={() => window.print()} className="text-[10px] font-mono uppercase bg-yellow-500 text-black px-4 py-2 rounded font-black flex items-center gap-2">
-                                            <Printer size={14} />
-                                            <span>Print / Save PDF</span>
-                                        </button>
                                     </div>
                                 </div>
 
