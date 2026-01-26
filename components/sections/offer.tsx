@@ -112,6 +112,14 @@ export function Offer() {
                                         >
                                             🟢 联系助理 KC
                                         </a>
+                                        <a
+                                            href="https://wa.link/z8t8x9"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-2 px-3 py-1 rounded border border-green-500/50 bg-green-500/10 text-green-400 text-xs font-bold hover:bg-green-500/20 hover:border-green-500 transition-all shadow-[0_0_10px_-2px_rgba(34,197,94,0.3)] animate-pulse"
+                                        >
+                                            🟢 联系助理 Wei Kang
+                                        </a>
                                         <span className="text-gray-300">确保您的名额已成功登记。</span>
                                     </div>
                                 </div>
